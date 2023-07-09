@@ -7,8 +7,8 @@
 # Inherit from sm8350-common
 $(call inherit-product, device/xiaomi/sm8350-common/common.mk)
 
-# Camera
-$(call inherit-product-if-exists, vendor/xiaomi/miuicamera-lisa/BoardConfig.mk)
+# Inherit MiuiCamera Makefile
+$(call inherit-product, vendor/xiaomi/miuicamera-lisa/device.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
