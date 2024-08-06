@@ -11,8 +11,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from lisa device
 $(call inherit-product, device/xiaomi/lisa/device.mk)
 
-# Inherit some common Lineage stuff.
+# Inherit some common Evolution-X stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Evolution-X Stuff
+EVO_BUILD_TYPE := Official
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP := true
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := lisa
