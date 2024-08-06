@@ -5,6 +5,17 @@
 #
 
 DEVICE_PATH := device/xiaomi/lisa
+BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+
+# Camera
+TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED := true
+TARGET_INCLUDES_MIUI_CAMERA := true
+MALLOC_SVELTE_FOR_LIBC32 := true
+
+# Miui-Cam
+TARGET_INCLUDES_MIUI_CAMERA := true
 
 # Inherit from sm8350-common
 include device/xiaomi/sm8350-common/BoardConfigCommon.mk
