@@ -1,0 +1,4 @@
+# Fingerprint
+persist.vendor.fingerprint.type=side
+persist.vendor.fingerprint.sensor_modules=fpc
+persist.vendor.fingerprint.sensor_location=1080|960|200
