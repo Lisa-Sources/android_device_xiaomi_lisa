@@ -12,8 +12,7 @@ $(call inherit-product, vendor/xiaomi/miuicamera-lisa/device.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-evolution
+    $(LOCAL_PATH)/overlay
 
 # Overlays-RRO
 PRODUCT_PACKAGES += \
